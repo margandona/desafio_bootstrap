@@ -5,44 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/3d96dc518b.js" crossorigin="anonymous"></script>
-    <style>
-        .body{
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            background-color: #47ccc4;
-        }
-        .navbar-dark{
-            background-color: #245454;
-        }
-        .navbar-dark .navbar-nav .nav-link {
-            color: #8ca4ac;
-        }
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: rgba(255,255,255,.75);
-        }
-        .article {
-            width: 200px;  /* Ajusta el ancho según tus necesidades */
-            background: #FFFFFF;  /* Fondo blanco para el artículo */
-            padding: 10px;  /* Espaciado interior */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra ligera para destacar el artículo */
-            border-radius: 5px;  /* Bordes redondeados */
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;  /* Espacio entre elementos */
-        }
-        .contact-item h5 {
-            margin: 0 0 0 10px;  /* Espacio entre el ícono y el texto */
-            font-size: 16px;  /* Tamaño de fuente ajustado */
-        }
-        .fa-phone, .fa-envelope, .fa-linkedin, .fa-github, .fa-instagram {
-            color: #4A90E2;  /* Color del ícono */
-        }
-    </style>
+   
     <!--fin Font Awesome-->
     <title>Ejercicio 4</title>
     
@@ -51,7 +17,7 @@
 <body class="body">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Peter Parker</h1></a>
+            <a class="navbar-brand" href="#"><h1 class="titulo">Peter Parker</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
@@ -91,37 +57,37 @@
     <h2 class="text-center">Mis Habilidades</h2>
     <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
         <article class="col-lg-2 "></article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/html.png" alt="" style="width: 35%;">HTML</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/css.png" alt="" style="width: 35%;">CSS</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/sass.svg" alt="" style="width: 35%;">SASS</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/bootstrap-logo.png" alt="" style="width: 35%;">BS</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/git.png" alt="" style="width: 35%;">Git</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/GitHub.png" alt="" style="width: 35%;">GitHub</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/js.png" alt="" style="width: 35%;">JS</article>
-        <article class="col-lg-1 col-6" "><img src="assets/img/vue.png" alt="" style="width: 35%;">VUE</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/html.png" alt="" class="row__img" >HTML</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/css.png" alt="" class="row__img" >CSS</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/sass.svg" alt="" class="row__img" >SASS</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/bootstrap-logo.png" alt="" class="row__img" >BS</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/git.png" alt="" class="row__img" >Git</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/GitHub.png" alt="" class="row__img" >GitHub</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/js.png" alt="" class="row__img" >JS</article>
+        <article class="col-lg-1 col-6" "><img src="assets/img/vue.png" alt="" class="row__img">VUE</article>
         <article class="col-lg-2"></article>
     </div>
    </section>
 
-   
-   <section class="container" style="margin-top: 30px;">
+   <!--proyectos-->
+   <section class="container contenedor" >
     <h2 class="text-center">Mis Proyectos</h2>
-    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row " >
         
-        <article class="col-md-3 col-6" >
-            <img src="assets/img/coffee.avif" alt="" style="width: 100%;">
+        <article class="col-md-3 col-6 contenedor__proyectos" >
+            <img src="assets/img/coffee.avif" alt="" class="contenedor__proyectos--img">
             <h4>Meet & cofee</h4>
         </article>
         <article class="col-md-3 col-6">
-            <img src="assets/img/coffee.avif" alt="" style="width: 100%;">
+            <img src="assets/img/coffee.avif" alt="" class="contenedor__proyectos--img">
             <h4>Meet & cofee</h4>
         </article>
         <article class="col-md-3 col-6">
-            <img src="assets/img/coffee.avif" alt="" style="width: 100%;">
+            <img src="assets/img/coffee.avif" alt="" class="contenedor__proyectos--img">
             <h4>Meet & cofee</h4>
         </article>
         <article class="col-md-3 col-6">
-            <img src="assets/img/coffee.avif" alt="" style="width: 100%;">
+            <img src="assets/img/coffee.avif" alt="" class="contenedor__proyectos--img">
             <h4>Meet & cofee</h4>
         </article>
         
@@ -129,13 +95,14 @@
     </div>
    </section>
 
-   <section class="container" style="margin-top: 30px;">
+   <!--contacto-->
+   <section class="container contenedor__contacto"  >
     <h2 class="text-center">Contacto </h2>
-    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row fila" >
         
         <article class="col-md-6 col-12" >
             <form action="submit" class="form-group">
-                <div class="row g-3 align-items-center" style="margin-bottom: 10px;">
+                <div class="row g-3 align-items-center contenedor__form" >
                     
                     <div class="col-6">
                       <input type="text"  class="form-control" placeholder="Nombre">
@@ -147,10 +114,10 @@
                     
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control" placeholder="Correo Electrónico" style="margin-bottom: 10px;">
+                    <input type="email" class="form-control form-control__email" placeholder="Correo Electrónico" >
                   </div>
                   <div class="col-12">
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" style="margin-bottom: 10px;"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control form-control__textarea" ></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary mb-3">Enviar</button>
             </form>
