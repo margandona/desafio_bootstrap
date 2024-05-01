@@ -15,6 +15,25 @@
         .navbar-dark .navbar-nav .nav-link:hover {
             color: rgba(255,255,255,.75);
         }
+        .article {
+            width: 200px;  /* Ajusta el ancho según tus necesidades */
+            background: #FFFFFF;  /* Fondo blanco para el artículo */
+            padding: 10px;  /* Espaciado interior */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra ligera para destacar el artículo */
+            border-radius: 5px;  /* Bordes redondeados */
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;  /* Espacio entre elementos */
+        }
+        .contact-item h5 {
+            margin: 0 0 0 10px;  /* Espacio entre el ícono y el texto */
+            font-size: 16px;  /* Tamaño de fuente ajustado */
+        }
+        .fa-phone, .fa-envelope, .fa-linkedin, .fa-github, .fa-instagram {
+            color: #4A90E2;  /* Color del ícono */
+        }
     </style>
     <!--fin Font Awesome-->
     <title>Ejercicio 4</title>
@@ -24,23 +43,23 @@
 <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h1>Peter Parker</h1></a>
+            <a class="navbar-brand" href="#"><h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Peter Parker</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
             <div id="navmenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"> <a href="#estudiantes" class="nav-link"><i class="fa-solid fa-user-graduate"></i> Estudiantes</a> </li>
-                    <li class="nav-item"> <a href="#docentes" class="nav-link"><i class="fa-solid fa-chalkboard-teacher"></i> Docentes</a> </li>
-                    <li class="nav-item"> <a href="#colaboradores" class="nav-link"><i class="fa-solid fa-users"></i> Colaboradores</a> </li>
-                    <li class="nav-item"> <a href="#posts" class="nav-link"><i class="fa-solid fa-clipboard-list"></i> Posts</a> </li>
+                    <li class="nav-item"> <a href="#inicio" class="nav-link"> Inicio</a> </li>
+                    <li class="nav-item"> <a href="#habilidades" class="nav-link"> Mis Habilidades</a> </li>
+                    <li class="nav-item"> <a href="#proyectos" class="nav-link">Mis Proyectos</a> </li>
+                    <li class="nav-item"> <a href="#contacto" class="nav-link">Contacto</a> </li>
                 </ul>
             </div>
         </div>
     </nav>
 
   <br><br><br><br><br><br>
-    <section class="container">
+    <section class="container" id="">
         <div class="row">
             <article class="col-md-6">
                 <img src="assets/img/developer.svg" alt="" style="height: 222px;">
@@ -59,8 +78,8 @@
         </div>
     </section>
 
-
-   <section class="container" style="margin-top: 30px;">
+    <!--seccion habilidades-->
+   <section class="container" style="margin-top: 30px;" id="habilidades">
     <h2 class="text-center">Mis Habilidades</h2>
     <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
         <article class="col-lg-2 "></article>
@@ -103,12 +122,12 @@
    </section>
 
    <section class="container" style="margin-top: 30px;">
-    <h2 class="text-center">Mis Proyectos</h2>
+    <h2 class="text-center">Contacto </h2>
     <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
         
         <article class="col-md-6 col-12" >
             <form action="submit" class="form-group">
-                <div class="row g-3 align-items-center">
+                <div class="row g-3 align-items-center" style="margin-bottom: 10px;">
                     
                     <div class="col-6">
                       <input type="text"  class="form-control" placeholder="Nombre">
@@ -120,18 +139,38 @@
                     
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control" placeholder="Correo Electrónico">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico" style="margin-bottom: 10px;">
                   </div>
                   <div class="col-12">
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" style="margin-bottom: 10px;"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary mb-3">Enviar</button>
             </form>
         </article>
         <article class="col-md-6 col-12">
-            <H5>+569-555-5555</H5>
-            <H5></H5>
-        </article>
+            <article class="article">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5>+56999887766</h5>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h5>tumail@gmail.com</h5>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h5>tulinkedin</h5>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <h5>Tu Github</h5>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <h5>Tu Instagram</h5>
+                </div>
+            </article>
+            
         
         
        
